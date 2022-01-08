@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      8477,        243]
-NotebookOptionsPosition[      8025,        228]
-NotebookOutlinePosition[      8428,        244]
-CellTagsIndexPosition[      8385,        241]
+NotebookDataLength[      8608,        246]
+NotebookOptionsPosition[      8062,        229]
+NotebookOutlinePosition[      8559,        247]
+CellTagsIndexPosition[      8516,        244]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -102,7 +102,8 @@ Cell[BoxData[
        RowBox[{
         RowBox[{"Sin", "[", "x", "]"}], "-", 
         RowBox[{"Cos", "[", "y", "]"}], "+", 
-        RowBox[{"0.1", "x", " ", "y"}]}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"0.1", "x", " ", "y"}], "+", "3"}]}], ";", 
+      "\[IndentingNewLine]", 
       RowBox[{"grad", "=", 
        RowBox[{
         RowBox[{"D", "[", 
@@ -201,8 +202,7 @@ Cell[BoxData[
            RowBox[{"{", 
             RowBox[{"0", ",", "6"}], "}"}], ",", 
            RowBox[{"{", 
-            RowBox[{
-             RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "}"}]}]}], "]"}]}]}], 
+            RowBox[{"0", ",", "6"}], "}"}]}], "}"}]}]}], "]"}]}]}], 
     "\[IndentingNewLine]", "]"}], ",", 
    RowBox[{"{", 
     RowBox[{
@@ -223,11 +223,14 @@ Cell[BoxData[
   3.8506694231907215`*^9, 3.8506695202702837`*^9}, {3.8506696008968253`*^9, 
   3.8506697042144127`*^9}, {3.850669741635662*^9, 3.850669821703814*^9}, {
   3.8506698897103024`*^9, 3.8506698899784*^9}, {3.85066995330381*^9, 
-  3.850670080935897*^9}, {3.850670140465626*^9, 3.850670217654462*^9}},
- CellLabel->"In[48]:=",ExpressionUUID->"e3ab27fc-78d9-4ea7-8a71-f09c6e743399"]
+  3.850670080935897*^9}, {3.850670140465626*^9, 3.850670217654462*^9}, {
+  3.8506741532497096`*^9, 3.8506741576152*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"e3ab27fc-78d9-4ea7-8a71-f09c6e743399"]
 },
 WindowSize->{760, 833},
-WindowMargins->{{Automatic, 212}, {67, Automatic}},
+WindowMargins->{{393, Automatic}, {Automatic, 73}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
 FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"a42cd36a-ce00-4cea-9c09-89b511324284"
@@ -244,7 +247,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 2428, 67, 162, "Input",ExpressionUUID->"ece352ac-6d96-4d3b-b488-e02259ab5c37"],
-Cell[2989, 89, 5032, 137, 200, "Input",ExpressionUUID->"e3ab27fc-78d9-4ea7-8a71-f09c6e743399"]
+Cell[2989, 89, 5069, 138, 200, "Input",ExpressionUUID->"e3ab27fc-78d9-4ea7-8a71-f09c6e743399"]
 }
 ]
 *)
