@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10276,        284]
-NotebookOptionsPosition[      9919,        270]
-NotebookOutlinePosition[     10322,        286]
-CellTagsIndexPosition[     10279,        283]
+NotebookDataLength[     10412,        286]
+NotebookOptionsPosition[     10055,        272]
+NotebookOutlinePosition[     10458,        288]
+CellTagsIndexPosition[     10415,        285]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -72,7 +72,9 @@ Cell[BoxData[
         RowBox[{"av", "=", 
          RowBox[{"Graphics", "[", 
           RowBox[{"{", 
-           RowBox[{"Blue", ",", "Thick", ",", 
+           RowBox[{
+            RowBox[{"Lighter", "[", 
+             RowBox[{"Lighter", "[", "Blue", "]"}], "]"}], ",", "Thick", ",", 
             RowBox[{"Arrow", "[", 
              RowBox[{"{", 
               RowBox[{
@@ -264,12 +266,12 @@ Cell[BoxData[
   3.8507488492557764`*^9, 3.8507489968646317`*^9}, {3.8507490327005396`*^9, 
   3.8507491064902744`*^9}, {3.850749182850288*^9, 3.850749196816492*^9}, {
   3.8507507174845047`*^9, 3.8507507730006027`*^9}, {3.8507508141527643`*^9, 
-  3.850751272225878*^9}, {3.850751319617469*^9, 3.850751391996904*^9}},
- CellLabel->
-  "In[109]:=",ExpressionUUID->"815f8ba1-3e6f-46ea-9147-683cb53aa5eb"]
+  3.850751272225878*^9}, {3.850751319617469*^9, 3.850751391996904*^9}, {
+  3.8511112539500275`*^9, 3.851111276652365*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"815f8ba1-3e6f-46ea-9147-683cb53aa5eb"]
 },
 WindowSize->{760, 833},
-WindowMargins->{{Automatic, 153}, {15, Automatic}},
+WindowMargins->{{427, Automatic}, {Automatic, 14}},
 FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"b6040945-ff27-49c7-a9a8-ad2585e5a413"
@@ -285,7 +287,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 9357, 248, 544, "Input",ExpressionUUID->"815f8ba1-3e6f-46ea-9147-683cb53aa5eb"]
+Cell[558, 20, 9493, 250, 544, "Input",ExpressionUUID->"815f8ba1-3e6f-46ea-9147-683cb53aa5eb"]
 }
 ]
 *)
