@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4853,        140]
-NotebookOptionsPosition[      4496,        126]
-NotebookOutlinePosition[      4899,        142]
-CellTagsIndexPosition[      4856,        139]
+NotebookDataLength[      4903,        141]
+NotebookOptionsPosition[      4546,        127]
+NotebookOutlinePosition[      4949,        143]
+CellTagsIndexPosition[      4906,        140]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -38,7 +38,7 @@ Cell[BoxData[
        "\[IndentingNewLine]", 
        RowBox[{
         RowBox[{"rr", "=", 
-         RowBox[{"r", "-", "r0"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"v", "-", "r0"}]}], ";", "\[IndentingNewLine]", 
         RowBox[{"r0g", "=", 
          RowBox[{"Graphics", "[", 
           RowBox[{"{", 
@@ -75,7 +75,7 @@ Cell[BoxData[
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-               "\"\<t\!\(\*OverscriptBox[\(r\), \(\[RightVector]\)]\)\>\"", 
+               "\"\<t\!\(\*OverscriptBox[\(v\), \(\[RightVector]\)]\)\>\"", 
                 ",", "20"}], "]"}], ",", 
               RowBox[{"r0", "+", 
                RowBox[{"t", " ", "rr"}], "+", 
@@ -109,7 +109,7 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{"r", ",", 
+        RowBox[{"v", ",", 
          RowBox[{"{", 
           RowBox[{"3", ",", "2.5"}], "}"}]}], "}"}], ",", "Locator"}], "}"}], 
      ",", 
@@ -121,8 +121,9 @@ Cell[BoxData[
   "]"}]], "Input",
  CellChangeTimes->{{3.851290904246949*^9, 3.8512911697338495`*^9}, {
   3.8512912065436344`*^9, 3.85129130512276*^9}, {3.8512913416307335`*^9, 
-  3.851291477415756*^9}, {3.8512915439745035`*^9, 3.8512915856247873`*^9}},
- CellLabel->"In[28]:=",ExpressionUUID->"a9df8916-3601-4de7-a03b-f13a09b9b718"]
+  3.851291477415756*^9}, {3.8512915439745035`*^9, 3.8512915856247873`*^9}, {
+  3.8513760278337693`*^9, 3.851376040016326*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"a9df8916-3601-4de7-a03b-f13a09b9b718"]
 },
 WindowSize->{760, 833},
 WindowMargins->{{572, Automatic}, {Automatic, 84}},
@@ -141,7 +142,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 3934, 104, 229, "Input",ExpressionUUID->"a9df8916-3601-4de7-a03b-f13a09b9b718"]
+Cell[558, 20, 3984, 105, 229, "Input",ExpressionUUID->"a9df8916-3601-4de7-a03b-f13a09b9b718"]
 }
 ]
 *)
