@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      8098,        220]
-NotebookOptionsPosition[      7553,        204]
-NotebookOutlinePosition[      7956,        220]
-CellTagsIndexPosition[      7913,        217]
+NotebookDataLength[      9294,        254]
+NotebookOptionsPosition[      8561,        236]
+NotebookOutlinePosition[      8964,        252]
+CellTagsIndexPosition[      8921,        249]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -172,8 +172,22 @@ Cell[BoxData[
  CellChangeTimes->{{3.8520727476505065`*^9, 3.8520729521228247`*^9}, {
   3.8520729871937857`*^9, 3.8520730605265627`*^9}, {3.8520731096331778`*^9, 
   3.8520731374489975`*^9}, {3.85207351966197*^9, 3.8520739891402917`*^9}, {
-  3.8520740229681273`*^9, 3.8520741029284725`*^9}},
- CellLabel->"In[63]:=",ExpressionUUID->"4c68c992-c619-4b34-815c-bc9ac750115f"],
+  3.8520740229681273`*^9, 
+  3.8520741029284725`*^9}},ExpressionUUID->"4c68c992-c619-4b34-815c-\
+bc9ac750115f"],
+
+Cell[BoxData[
+ RowBox[{"animate", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["#", "3"], "&"}], ",", 
+   RowBox[{
+    SuperscriptBox["#", "2"], "&"}], ",", "2", ",", 
+   RowBox[{"-", "1"}], ",", "8", ",", 
+   RowBox[{"-", "1"}], ",", "4"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8529353780697703`*^9, 
+  3.8529354294698086`*^9}},ExpressionUUID->"e56c780c-69d0-4aad-82b2-\
+9ab5e4bf9b50"],
 
 Cell[BoxData[
  RowBox[{"animate", "[", 
@@ -185,7 +199,25 @@ Cell[BoxData[
    RowBox[{"2", "Pi"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.852073065666499*^9, 3.8520730750833683`*^9}, {
   3.852073117692577*^9, 3.8520731182663527`*^9}},
- CellLabel->"In[64]:=",ExpressionUUID->"a292c355-308d-4310-af28-58af5771bf81"],
+ CellLabel->"In[25]:=",ExpressionUUID->"a292c355-308d-4310-af28-58af5771bf81"],
+
+Cell[BoxData[
+ RowBox[{"animate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"0.5", 
+     RowBox[{"Cos", "[", 
+      SuperscriptBox["#", "2"], "]"}]}], "&"}], ",", 
+   RowBox[{
+    RowBox[{"0.5", 
+     RowBox[{"Sin", "[", 
+      SuperscriptBox["#", "2"], "]"}]}], "&"}], ",", 
+   SqrtBox[
+    RowBox[{"2", "Pi"}]]}], "]"}]], "Input",
+ CellChangeTimes->{{3.852073065666499*^9, 3.8520730750833683`*^9}, {
+  3.852073117692577*^9, 3.8520731182663527`*^9}, {3.8529447701188345`*^9, 
+  3.852944842499299*^9}, {3.8529448816689715`*^9, 3.8529448842089095`*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"c6f8de64-e8f3-47a1-8373-1dbf0982e049"],
 
 Cell[BoxData[
  RowBox[{"animate", "[", 
@@ -200,10 +232,10 @@ Cell[BoxData[
  CellChangeTimes->{{3.852073065666499*^9, 3.8520730750833683`*^9}, {
   3.852073117692577*^9, 3.8520731182663527`*^9}, {3.852074120755329*^9, 
   3.8520741552869596`*^9}},
- CellLabel->"In[68]:=",ExpressionUUID->"17261fc5-13a3-4041-ace1-b605cdd0d4a6"]
+ CellLabel->"In[33]:=",ExpressionUUID->"17261fc5-13a3-4041-ace1-b605cdd0d4a6"]
 },
 WindowSize->{760, 833},
-WindowMargins->{{217, Automatic}, {Automatic, 75}},
+WindowMargins->{{Automatic, 476}, {Automatic, 33}},
 FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"7749034c-c75f-4017-9763-66d259b7d19c"
@@ -219,9 +251,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 6062, 155, 390, "Input",ExpressionUUID->"4c68c992-c619-4b34-815c-bc9ac750115f"],
-Cell[6623, 177, 413, 10, 28, "Input",ExpressionUUID->"a292c355-308d-4310-af28-58af5771bf81"],
-Cell[7039, 189, 510, 13, 28, "Input",ExpressionUUID->"17261fc5-13a3-4041-ace1-b605cdd0d4a6"]
+Cell[558, 20, 6043, 156, 390, "Input",ExpressionUUID->"4c68c992-c619-4b34-815c-bc9ac750115f"],
+Cell[6604, 178, 391, 11, 32, "Input",ExpressionUUID->"e56c780c-69d0-4aad-82b2-9ab5e4bf9b50"],
+Cell[6998, 191, 413, 10, 28, "Input",ExpressionUUID->"a292c355-308d-4310-af28-58af5771bf81"],
+Cell[7414, 203, 630, 16, 34, "Input",ExpressionUUID->"c6f8de64-e8f3-47a1-8373-1dbf0982e049"],
+Cell[8047, 221, 510, 13, 28, "Input",ExpressionUUID->"17261fc5-13a3-4041-ace1-b605cdd0d4a6"]
 }
 ]
 *)
