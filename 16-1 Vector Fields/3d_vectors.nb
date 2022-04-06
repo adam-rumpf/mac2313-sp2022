@@ -1,0 +1,63 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1552,         53]
+NotebookOptionsPosition[      1198,         39]
+NotebookOutlinePosition[      1601,         55]
+CellTagsIndexPosition[      1558,         52]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"VectorPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "y"}], ",", "x", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"VectorColorFunction", "\[Rule]", "None"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.858215039529719*^9, 3.8582150644610386`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"1a0eeea9-9513-4264-9230-08e0c50e20ce"]
+},
+WindowSize->{760, 833},
+WindowMargins->{{183, Automatic}, {86, Automatic}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"98677380-dc69-447f-b87d-655ff69781ca"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 636, 17, 28, "Input",ExpressionUUID->"1a0eeea9-9513-4264-9230-08e0c50e20ce"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

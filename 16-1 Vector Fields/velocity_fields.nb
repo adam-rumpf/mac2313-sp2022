@@ -1,0 +1,395 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14794,        387]
+NotebookOptionsPosition[     13866,        367]
+NotebookOutlinePosition[     14269,        383]
+CellTagsIndexPosition[     14226,        380]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"VectorPlot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "y"}], ",", "x"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", 
+          RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"y", ",", 
+          RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+        RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+        RowBox[{"VectorScale", "\[Rule]", "Automatic"}], ",", 
+        RowBox[{"VectorSizes", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0.3", ",", "1"}], "}"}]}], ",", 
+        RowBox[{"StreamPoints", "\[Rule]", 
+         RowBox[{"{", "pt", "}"}]}], ",", 
+        RowBox[{"StreamStyle", "\[Rule]", 
+         RowBox[{"Directive", "[", 
+          RowBox[{"{", 
+           RowBox[{"Thick", ",", "Red"}], "}"}], "]"}]}], ",", 
+        RowBox[{"StreamScale", "\[Rule]", "None"}], ",", 
+        RowBox[{"StreamColorFunction", "\[Rule]", "None"}], ",", 
+        RowBox[{"VectorColorFunction", "\[Rule]", "None"}]}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"PointSize", "[", "Large", "]"}], ",", "Red", ",", 
+         RowBox[{"Point", "[", "pt", "]"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"pt", ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", "Locator"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6471867542654676`*^9, 3.6471868137848716`*^9}, {
+  3.647199456981413*^9, 3.6471994614056664`*^9}, {3.647214802458064*^9, 
+  3.647214824429321*^9}, {3.647214973059822*^9, 3.647215105012369*^9}, {
+  3.855010554876067*^9, 3.855010626131773*^9}, {3.858237806229434*^9, 
+  3.858237826820354*^9}, {3.8582378996970997`*^9, 3.858237924692833*^9}, {
+  3.858238102196353*^9, 3.858238129005913*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"5ba2c995-8bbe-4aa8-9897-96a5333c755d"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"VectorPlot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"x", ",", "y"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", 
+          RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"y", ",", 
+          RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+        RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+        RowBox[{"VectorScale", "\[Rule]", "Automatic"}], ",", 
+        RowBox[{"VectorSizes", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0.3", ",", "1"}], "}"}]}], ",", 
+        RowBox[{"StreamPoints", "\[Rule]", 
+         RowBox[{"{", "pt", "}"}]}], ",", 
+        RowBox[{"StreamStyle", "\[Rule]", 
+         RowBox[{"Directive", "[", 
+          RowBox[{"{", 
+           RowBox[{"Thick", ",", "Red"}], "}"}], "]"}]}], ",", 
+        RowBox[{"StreamScale", "\[Rule]", "None"}], ",", 
+        RowBox[{"StreamColorFunction", "\[Rule]", "None"}], ",", 
+        RowBox[{"VectorColorFunction", "\[Rule]", "None"}]}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"PointSize", "[", "Large", "]"}], ",", "Red", ",", 
+         RowBox[{"Point", "[", "pt", "]"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"pt", ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", "Locator"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6471867542654676`*^9, 3.6471868137848716`*^9}, {
+  3.647199456981413*^9, 3.6471994614056664`*^9}, {3.647214802458064*^9, 
+  3.647214824429321*^9}, {3.647214973059822*^9, 3.647215105012369*^9}, {
+  3.855010554876067*^9, 3.855010626131773*^9}, {3.858237806229434*^9, 
+  3.858237826820354*^9}, {3.8582378996970997`*^9, 3.858237924692833*^9}, {
+  3.858238102196353*^9, 3.858238139897311*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"a391b13a-01d9-4c67-9b3e-e7c9db91d1d0"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"VectorPlot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"x", ",", 
+          RowBox[{"-", "y"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", 
+          RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"y", ",", 
+          RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+        RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+        RowBox[{"VectorScale", "\[Rule]", "Automatic"}], ",", 
+        RowBox[{"VectorSizes", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0.3", ",", "1"}], "}"}]}], ",", 
+        RowBox[{"StreamPoints", "\[Rule]", 
+         RowBox[{"{", "pt", "}"}]}], ",", 
+        RowBox[{"StreamStyle", "\[Rule]", 
+         RowBox[{"Directive", "[", 
+          RowBox[{"{", 
+           RowBox[{"Thick", ",", "Red"}], "}"}], "]"}]}], ",", 
+        RowBox[{"StreamScale", "\[Rule]", "None"}], ",", 
+        RowBox[{"StreamColorFunction", "\[Rule]", "None"}], ",", 
+        RowBox[{"VectorColorFunction", "\[Rule]", "None"}]}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"PointSize", "[", "Large", "]"}], ",", "Red", ",", 
+         RowBox[{"Point", "[", "pt", "]"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"pt", ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", "Locator"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6471867542654676`*^9, 3.6471868137848716`*^9}, {
+  3.647199456981413*^9, 3.6471994614056664`*^9}, {3.647214802458064*^9, 
+  3.647214824429321*^9}, {3.647214973059822*^9, 3.647215105012369*^9}, {
+  3.855010554876067*^9, 3.855010626131773*^9}, {3.858237806229434*^9, 
+  3.858237826820354*^9}, {3.8582378996970997`*^9, 3.858237924692833*^9}, {
+  3.858238102196353*^9, 3.858238150209955*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"ff0fccae-7b9b-49ce-a00b-bf6d35986c04"],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 0.5}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{
+  Inherited, 3},ExpressionUUID->"508bca33-125d-4705-8d8b-36c19061402d"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"VectorPlot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"0.4", "x"}], "-", 
+           RowBox[{"0.45", "x", " ", "y"}]}], ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "0.2"}], "y"}], "+", 
+           RowBox[{"0.25", "x", " ", "y"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"y", ",", "0", ",", "2"}], "}"}], ",", 
+        RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+        RowBox[{"VectorScale", "\[Rule]", "Automatic"}], ",", 
+        RowBox[{"VectorSizes", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0.3", ",", "1"}], "}"}]}], ",", 
+        RowBox[{"StreamPoints", "\[Rule]", 
+         RowBox[{"{", "pt", "}"}]}], ",", 
+        RowBox[{"StreamStyle", "\[Rule]", 
+         RowBox[{"Directive", "[", 
+          RowBox[{"{", 
+           RowBox[{"Thick", ",", "Red"}], "}"}], "]"}]}], ",", 
+        RowBox[{"StreamScale", "\[Rule]", "None"}], ",", 
+        RowBox[{"StreamColorFunction", "\[Rule]", "None"}], ",", 
+        RowBox[{"VectorColorFunction", "\[Rule]", "None"}]}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"PointSize", "[", "Large", "]"}], ",", "Red", ",", 
+         RowBox[{"Point", "[", "pt", "]"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"pt", ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", "Locator"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6471867542654676`*^9, 3.6471868137848716`*^9}, {
+  3.647199456981413*^9, 3.6471994614056664`*^9}, {3.647214802458064*^9, 
+  3.647214824429321*^9}, {3.647214973059822*^9, 3.647215105012369*^9}, {
+  3.855010554876067*^9, 3.855010626131773*^9}, {3.858237806229434*^9, 
+  3.858237826820354*^9}, {3.8582378996970997`*^9, 3.858237924692833*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"e3b90734-74a1-4fa7-b1d4-cb7c414e50ea"],
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "lvsols", "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"lvsols", "=", 
+     RowBox[{"NDSolve", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"x", "'"}], "[", "t", "]"}], "\[Equal]", 
+         RowBox[{
+          RowBox[{"0.4", 
+           RowBox[{"x", "[", "t", "]"}]}], "-", 
+          RowBox[{"0.45", 
+           RowBox[{"x", "[", "t", "]"}], " ", 
+           RowBox[{"y", "[", "t", "]"}]}]}]}], "&&", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"y", "'"}], "[", "t", "]"}], "\[Equal]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "0.2"}], 
+           RowBox[{"y", "[", "t", "]"}]}], "+", 
+          RowBox[{"0.25", 
+           RowBox[{"x", "[", "t", "]"}], " ", 
+           RowBox[{"y", "[", "t", "]"}]}]}]}], "&&", 
+        RowBox[{
+         RowBox[{"x", "[", "0", "]"}], "\[Equal]", "1.6"}], "&&", 
+        RowBox[{
+         RowBox[{"y", "[", "0", "]"}], "\[Equal]", "0.9"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"x", "[", "t", "]"}], ",", 
+         RowBox[{"y", "[", "t", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", "80"}], "}"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Evaluate", "[", 
+         RowBox[{
+          RowBox[{"x", "[", "t", "]"}], "/.", "lvsols"}], "]"}], ",", 
+        RowBox[{"Evaluate", "[", 
+         RowBox[{
+          RowBox[{"y", "[", "t", "]"}], "/.", "lvsols"}], "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "0", ",", "80"}], "}"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "80"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "2"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"PlotStyle", "\[Rule]", "Thick"}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.6472239358724656`*^9, 3.647224084942992*^9}, {
+  3.647224173172038*^9, 3.6472241845526896`*^9}, {3.647224222735873*^9, 
+  3.647224222810878*^9}, {3.647225973350003*^9, 3.647225973597017*^9}, {
+  3.855010695873048*^9, 3.855010698493595*^9}, {3.8550180160665045`*^9, 
+  3.8550180227418966`*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"67518c86-b391-4a8c-b8fa-b05ecd39a96b"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"VectorPlot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"0.4", "x", 
+            RowBox[{"(", 
+             RowBox[{"1", "-", 
+              FractionBox["x", "2"]}], ")"}]}], "-", 
+           RowBox[{"0.45", "x", " ", "y"}]}], ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "0.2"}], "y"}], "+", 
+           RowBox[{"0.25", "x", " ", "y"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"y", ",", "0", ",", "2"}], "}"}], ",", 
+        RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+        RowBox[{"VectorScale", "\[Rule]", "Automatic"}], ",", 
+        RowBox[{"VectorSizes", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0.3", ",", "1"}], "}"}]}], ",", 
+        RowBox[{"StreamPoints", "\[Rule]", 
+         RowBox[{"{", "pt", "}"}]}], ",", 
+        RowBox[{"StreamStyle", "\[Rule]", 
+         RowBox[{"Directive", "[", 
+          RowBox[{"{", 
+           RowBox[{"Thick", ",", "Red"}], "}"}], "]"}]}], ",", 
+        RowBox[{"StreamScale", "\[Rule]", "None"}], ",", 
+        RowBox[{"StreamColorFunction", "\[Rule]", "None"}], ",", 
+        RowBox[{"VectorColorFunction", "\[Rule]", "None"}]}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"PointSize", "[", "Large", "]"}], ",", "Red", ",", 
+         RowBox[{"Point", "[", "pt", "]"}]}], "}"}], "]"}]}], "}"}], "]"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"pt", ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", "Locator"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6471867542654676`*^9, 3.6471868137848716`*^9}, {
+  3.647199456981413*^9, 3.6471994614056664`*^9}, {3.647214802458064*^9, 
+  3.647214824429321*^9}, {3.647214973059822*^9, 3.647215105012369*^9}, {
+  3.855010554876067*^9, 3.855010665297073*^9}, {3.8582379694886723`*^9, 
+  3.8582379706744547`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"9830b8e5-928a-4c1d-94d3-8b66b77ab612"]
+},
+WindowSize->{760, 833},
+WindowMargins->{{110, Automatic}, {Automatic, 83}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"74d5f22b-4f00-4366-8546-f07d87e8c300"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2058, 50, 105, "Input",ExpressionUUID->"5ba2c995-8bbe-4aa8-9897-96a5333c755d"],
+Cell[2619, 72, 2032, 49, 105, "Input",ExpressionUUID->"a391b13a-01d9-4c67-9b3e-e7c9db91d1d0"],
+Cell[4654, 123, 2058, 50, 105, "Input",ExpressionUUID->"ff0fccae-7b9b-49ce-a00b-bf6d35986c04"],
+Cell[6715, 175, 331, 10, 6, "Text",ExpressionUUID->"508bca33-125d-4705-8d8b-36c19061402d"],
+Cell[7049, 187, 2157, 53, 124, "Input",ExpressionUUID->"e3b90734-74a1-4fa7-b1d4-cb7c414e50ea"],
+Cell[9209, 242, 2432, 65, 124, "Input",ExpressionUUID->"67518c86-b391-4a8c-b8fa-b05ecd39a96b"],
+Cell[11644, 309, 2218, 56, 168, "Input",ExpressionUUID->"9830b8e5-928a-4c1d-94d3-8b66b77ab612"]
+}
+]
+*)
+
