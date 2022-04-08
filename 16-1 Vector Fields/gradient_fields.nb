@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10273,        269]
-NotebookOptionsPosition[      9727,        253]
-NotebookOutlinePosition[     10130,        269]
-CellTagsIndexPosition[     10087,        266]
+NotebookDataLength[     17797,        447]
+NotebookOptionsPosition[     16648,        423]
+NotebookOutlinePosition[     17051,        439]
+CellTagsIndexPosition[     17008,        436]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -197,6 +197,129 @@ Cell[BoxData[
  CellLabel->"In[87]:=",ExpressionUUID->"be0423fa-5d7a-41df-9527-3f19089ed578"],
 
 Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"Generic", " ", "surface"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.8583761906534595`*^9, 
+  3.8583761942521935`*^9}},ExpressionUUID->"94c856dd-9e84-43ce-a325-\
+f68386830e7f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gradfield", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Sin", "[", "#1", "]"}], "-", 
+     RowBox[{"Cos", "[", "#2", "]"}], "+", 
+     RowBox[{"0.1", "#1", "*", "#2"}], "+", "3"}], "&"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "6"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "6"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "6"}], "}"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8583762399130497`*^9, 3.8583762814761477`*^9}},
+ CellLabel->"In[93]:=",ExpressionUUID->"879f786f-4f3d-4d38-b946-b2660380191d"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`show$$ = True, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`show$$], False, "show gradient field"}, {
+      False, True}}}, Typeset`size$$ = {360., {186., 191.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`show$$ = False}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`dx$, $CellContext`xmin$ = 
+         Part[{{0, 6}, {0, 6}, {0, 6}}, 1, 1], $CellContext`xmax$ = 
+         Part[{{0, 6}, {0, 6}, {0, 6}}, 1, 2], $CellContext`ymin$ = 
+         Part[{{0, 6}, {0, 6}, {0, 6}}, 2, 1], $CellContext`ymax$ = 
+         Part[{{0, 6}, {0, 6}, {0, 6}}, 2, 
+           2], $CellContext`surf$, $CellContext`grad$, $CellContext`gv$, \
+$CellContext`gf$}, $CellContext`dx$ = 
+         Min[{$CellContext`xmax$ - $CellContext`xmin$, $CellContext`ymax$ - \
+$CellContext`ymin$}]/(10 + 1); $CellContext`grad$[
+           Pattern[$CellContext`x$, 
+            Blank[]], 
+           Pattern[$CellContext`y$, 
+            Blank[]]] := Evaluate[
+           D[
+            (Sin[#] - Cos[#2] + 0.1 # #2 + 
+            3& )[$CellContext`x$, $CellContext`y$], {{$CellContext`x$, \
+$CellContext`y$}}]]; $CellContext`gv$[
+           Pattern[$CellContext`x$, 
+            Blank[]], 
+           Pattern[$CellContext`y$, 
+            Blank[]]] := If[Norm[
+             $CellContext`grad$[$CellContext`x$, $CellContext`y$]] > 0, 
+           Append[$CellContext`grad$[$CellContext`x$, $CellContext`y$]/Norm[
+             $CellContext`grad$[$CellContext`x$, $CellContext`y$]], 
+            Norm[
+             $CellContext`grad$[$CellContext`x$, $CellContext`y$]]], {0, 0, 
+           0}]; $CellContext`surf$ = Plot3D[
+           (Sin[#] - Cos[#2] + 0.1 # #2 + 
+           3& )[$CellContext`x, $CellContext`y], {$CellContext`x, \
+$CellContext`xmin$, $CellContext`xmax$}, {$CellContext`y, $CellContext`ymin$, \
+$CellContext`ymax$}, PlotRange -> {{0, 6}, {0, 6}, {0, 6}}, PlotStyle -> 
+           Opacity[0.5]]; $CellContext`gf$ = If[$CellContext`show$$, 
+           Graphics3D[
+            Join[{Black, Thick}, 
+             Flatten[
+              Table[
+               Arrow[{{$CellContext`x, $CellContext`y, 
+                  (Sin[#] - Cos[#2] + 0.1 # #2 + 
+                  3& )[$CellContext`x, $CellContext`y]}, {$CellContext`x, \
+$CellContext`y, 
+                   (Sin[#] - Cos[#2] + 0.1 # #2 + 
+                   3& )[$CellContext`x, $CellContext`y]} + 
+                 If[False, -0.5, 
+                    0.5] $CellContext`gv$[$CellContext`x, $CellContext`y]}], \
+{$CellContext`x, $CellContext`xmin$ + $CellContext`dx$, $CellContext`xmax$ - \
+$CellContext`dx$, $CellContext`dx$}, {$CellContext`y, $CellContext`ymin$ + \
+$CellContext`dx$, $CellContext`ymax$ - $CellContext`dx$, \
+$CellContext`dx$}]]]], 
+           Graphics3D[]]; 
+        Show[$CellContext`surf$, $CellContext`gf$, 
+          PlotRange -> {{0, 6}, {0, 6}, {0, 6}}, BoxRatios -> Automatic]], 
+      "Specifications" :> {{{$CellContext`show$$, False, 
+          "show gradient field"}, {False, True}, ControlType -> Checkbox}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {228., 234.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.8583762962315335`*^9, 
+  3.858376297781844*^9}},ExpressionUUID->"c43484f7-9494-4d2e-a67c-\
+43bddca5e7e8"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"Gravitational", " ", "potential"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.8583761728730936`*^9, 
+  3.85837618103393*^9}},ExpressionUUID->"9fee29c2-9bec-4403-a4dc-\
+1ade2878dafb"],
+
+Cell[BoxData[
  RowBox[{"gradfield", "[", 
   RowBox[{
    RowBox[{
@@ -249,7 +372,54 @@ Cell[BoxData[
    3.8583754479102693`*^9}, {3.858375547594033*^9, 3.858375552419454*^9}, {
    3.858375734035841*^9, 3.858375740261258*^9}, {3.8583758467299976`*^9, 
    3.8583758673044577`*^9}, 3.8583759574228945`*^9},
- CellLabel->"In[89]:=",ExpressionUUID->"6a873ecc-9e31-4d01-ab5f-6653e70703f7"]
+ CellLabel->"In[90]:=",ExpressionUUID->"6a873ecc-9e31-4d01-ab5f-6653e70703f7"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"Two", " ", "charges"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.858376199244315*^9, 
+  3.8583762083076553`*^9}},ExpressionUUID->"48c3e7ea-fb96-4e53-901f-\
+84599f8485ce"],
+
+Cell[BoxData[
+ RowBox[{"gradfield", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"#1", "-", "1.5"}], ")"}], "2"], "+", 
+        SuperscriptBox["#2", "2"]}]]], "-", 
+     FractionBox["1", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"#1", "+", "1.5"}], ")"}], "2"], "+", 
+        SuperscriptBox["#2", "2"]}]]]}], "&"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "}"}], ",", "10", ",", "0.25",
+    ",", "True"}], "]"}]], "Input",
+ CellChangeTimes->{{3.858374268323109*^9, 3.8583743285695944`*^9}, {
+   3.858375016551511*^9, 3.8583750196380653`*^9}, {3.8583754454269285`*^9, 
+   3.8583754479102693`*^9}, {3.858375547594033*^9, 3.858375552419454*^9}, {
+   3.858375734035841*^9, 3.858375740261258*^9}, {3.85837590011265*^9, 
+   3.858375913310191*^9}, 3.858375956013388*^9, {3.858376424159418*^9, 
+   3.85837649375644*^9}},
+ CellLabel->
+  "In[102]:=",ExpressionUUID->"84303c10-b0d8-45f0-920a-48520f7589df"]
 },
 WindowSize->{760, 833},
 WindowMargins->{{183, Automatic}, {86, Automatic}},
@@ -269,8 +439,16 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 7238, 176, 532, "Input",ExpressionUUID->"be0423fa-5d7a-41df-9527-3f19089ed578"],
-Cell[7799, 198, 913, 24, 52, "Input",ExpressionUUID->"37ac6c40-0ffe-4af2-b27d-ab535b2a59b0"],
-Cell[8715, 224, 1008, 27, 52, "Input",ExpressionUUID->"6a873ecc-9e31-4d01-ab5f-6653e70703f7"]
+Cell[7799, 198, 226, 5, 28, "Input",ExpressionUUID->"94c856dd-9e84-43ce-a325-f68386830e7f"],
+Cell[CellGroupData[{
+Cell[8050, 207, 619, 17, 28, "Input",ExpressionUUID->"879f786f-4f3d-4d38-b946-b2660380191d"],
+Cell[8672, 226, 4257, 85, 481, "Output",ExpressionUUID->"c43484f7-9494-4d2e-a67c-43bddca5e7e8"]
+}, Open  ]],
+Cell[12944, 314, 231, 5, 28, "Input",ExpressionUUID->"9fee29c2-9bec-4403-a4dc-1ade2878dafb"],
+Cell[13178, 321, 913, 24, 52, "Input",ExpressionUUID->"37ac6c40-0ffe-4af2-b27d-ab535b2a59b0"],
+Cell[14094, 347, 1008, 27, 52, "Input",ExpressionUUID->"6a873ecc-9e31-4d01-ab5f-6653e70703f7"],
+Cell[15105, 376, 220, 5, 28, "Input",ExpressionUUID->"48c3e7ea-fb96-4e53-901f-84599f8485ce"],
+Cell[15328, 383, 1316, 38, 84, "Input",ExpressionUUID->"84303c10-b0d8-45f0-920a-48520f7589df"]
 }
 ]
 *)
